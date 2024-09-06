@@ -19,5 +19,5 @@ Il repository include i seguenti esercizi:
 
 Creare un progetto console 
 
-Copiare e incollare il codice interno ai file <nome>.java
+Copiare e incollare il codice interno ai file 'nome'.java
 
