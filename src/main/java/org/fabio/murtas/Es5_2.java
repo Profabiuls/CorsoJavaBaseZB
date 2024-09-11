@@ -19,7 +19,7 @@ public class Es5_2 {
 
     public static void clink(int fork) {
         System.out.print("It's ");
-        zoop("breakfast",fork);
+        zoop("breakfast", fork);
     }
 
     public static void ping(String strangStrung) {
@@ -27,16 +27,19 @@ public class Es5_2 {
     }
 
 }
-//l' output è 'just for \n any not more \n It's Breakfast \n!
+//l'output è 'just for \n any not more \n It's Breakfast \n!
 // Ping non viene chiamato una seconda volta solo una
 
 /*
 +-----------------------------+
-| zoop("breakfast", 4)         | <-- La chiamata corrente di `zoop`
+| zoop("just for", 5)         | <-- 1
 +-----------------------------+
-| clink(4)                     | <-- `clink` ha chiamato `zoop`
+| ping("not")                 | <-- 2
 +-----------------------------+
-| main()                       | <-- La funzione `main` che ha chiamato `clink`
+| clink(4)                    | <-- 3
 +-----------------------------+
+| zoop("Breakfast,4)          | <-- 4
++-----------------------------+
+
 
 * */
